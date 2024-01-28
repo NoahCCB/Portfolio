@@ -70,7 +70,7 @@ const About = () => {
                         About
                     </Text>
                     <Divider borderColor={dividerColor} my={3}/>
-                    <Image mt={3} mb={5} maxH={100} flexGrow={true} align="center" src="../P.JPG" borderRadius="full" boxShadow="dark-lg"/>
+                    <Image mt={3} mb={5} maxH={100} flexGrow={true} align="center" src={process.env.PUBLIC_URL + '/P.JPG'} borderRadius="full" boxShadow="dark-lg"/>
                     <Text>I am a computer science student at Washington University in St. Louis 
                         with a track record of crafting numerous software and web applications, and a dedicated, 
                         enthusiastic approach to continuous learning and creation

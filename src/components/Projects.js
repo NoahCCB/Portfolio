@@ -13,9 +13,9 @@ const Projects = ({ isOpen, onClose}) => {
         this.image = image;
     }
 
-    const beatbuff = new Project("Beatbuff", "A social app for sharing, rating, and catalogging music", "http://dev.fishersun.com:3000/", "../beatbuff.png");
-    const movieFinder = new Project("Movie Finder", "An app where you can find movies and look at their descriptions and ratings. Programmed in Swift using Storyboard", "https://github.com/NoahCCB/Movie-Finder", "../movie-finder.png");
-    const breakout = new Project("Breakout Game", "A simple retro version of the game breakout, written entirely in Java using Swing, highlighting object oriented design principles and effective coding practice", "https://github.com/NoahCCB/Breakout-Game", "../breakout.png");
+    const beatbuff = new Project("Beatbuff", "A social app for sharing, rating, and catalogging music", "http://dev.fishersun.com:3000/", "/beatbuff.png");
+    const movieFinder = new Project("Movie Finder", "An app where you can find movies and look at their descriptions and ratings. Programmed in Swift using Storyboard", "https://github.com/NoahCCB/Movie-Finder", "/movie-finder.png");
+    const breakout = new Project("Breakout Game", "A simple retro version of the game breakout, written entirely in Java using Swing, highlighting object oriented design principles and effective coding practice", "https://github.com/NoahCCB/Breakout-Game", "/breakout.png");
 
 
     let projectList = [beatbuff, movieFinder, breakout]
@@ -41,7 +41,7 @@ const Projects = ({ isOpen, onClose}) => {
                                             <Text fontWeight={700}>{project.title}</Text>
                                             <Text>{project.description}</Text>
                                         </Box>
-                                        <Image maxH={200} maxW={300} src={project.image} borderRadius="md"/>
+                                        <Image maxH={200} maxW={300} src={process.env.PUBLIC_URL + project.image} borderRadius="md"/>
                                     </HStack>
                                 </Box>
                             </Link>
