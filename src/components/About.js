@@ -77,6 +77,13 @@ const About = () => {
                         enthusiastic approach to continuous learning and creation
                     </Text>
                     <Divider borderColor={dividerColor} my={3}/>
+                    <Text fontWeight="600" mb={3}>Software Developer - ASL Aspire</Text>
+                    <Text>I work with ASL Aspire, a company focused on making STEM education accessible for deaf and hard of hearing students. 
+                        I built there teacher dashboard website, here teachers can assign the content created by the company to students as well as 
+                        get comprehensive insight into the students performance and shortcomings so as to better inform teachers. I worked on both the frontend and backend of the platform, utilizing
+                        Typescript and React as well as Pyhton, Alembic, Flask, and MySQL. 
+                    </Text>
+                    <Divider borderColor={dividerColor} my={3}/>
                     <Text fontWeight="600" mb={3}>Teaching Assistant - Data Structures and Algorithms</Text>
                     <Text>I am proud to be a mentor for other students and help students in groups to improve their code and understand course concepts. I hold office hours
                         In order to provide one-on-one guidance, and strive to explain and teach concepts in a understandable and engaging way.
@@ -119,6 +126,7 @@ const About = () => {
                             <ListItem>PyTorch</ListItem>
                             <ListItem>Scikit</ListItem>
                             <ListItem>Keras</ListItem>
+                            <ListItem>Flask</ListItem>
                         </UnorderedList>
                         <UnorderedList>
                             <ListItem>Firebase</ListItem>
@@ -127,6 +135,7 @@ const About = () => {
                             <ListItem>Prisma</ListItem>
                             <ListItem>SwiftUI</ListItem>
                             <ListItem>Numpy</ListItem>
+                            <ListItem>Alembic</ListItem>
                         </UnorderedList>
                     </HStack>
                 </Box>
@@ -180,6 +189,13 @@ const About = () => {
                         enthusiastic approach to continuous learning and creation
                     </Text>
                     <Divider borderColor={dividerColor} my={3}/>
+                    <Text fontWeight="600" mb={3}>Software Developer - ASL Aspire</Text>
+                    <Text>I work with ASL Aspire, a company focused on making STEM education accessible for deaf and hard of hearing students. 
+                        I built there teacher dashboard website, here teachers can assign the content created by the company to students as well as 
+                        get comprehensive insight into the students performance and shortcomings so as to better inform teachers. I worked on both the frontend and backend of the platform, utilizing
+                        Typescript and React as well as Pyhton, Alembic, Flask, and MySQL. 
+                    </Text>
+                    <Divider borderColor={dividerColor} my={3}/>
                     <Text fontWeight="600" mb={3}>Teaching Assistant - Data Structures and Algorithms</Text>
                     <Text>I am proud to be a mentor for other students and help students in groups to improve their code and understand course concepts. I hold office hours
                         In order to provide one-on-one guidance, and strive to explain and teach concepts in a understandable and engaging way.
@@ -204,6 +220,7 @@ const About = () => {
                             <ListItem>CSS</ListItem>
                             <ListItem>Typescript</ListItem>
                             <ListItem>Javascript</ListItem>
+                            
                         </UnorderedList>
                         <UnorderedList>
                             <ListItem>Python</ListItem>
@@ -216,12 +233,13 @@ const About = () => {
                     <Divider borderColor={dividerColor}/>
                     <HStack my={5} justifyContent="space-evenly">
                         <UnorderedList>
-                            <ListItem>MySQL/SQL</ListItem>
+                            <ListItem>MySQL / SQL</ListItem>
                             <ListItem>NodeJs</ListItem>
                             <ListItem>NextJs</ListItem>
                             <ListItem>PyTorch</ListItem>
                             <ListItem>Scikit</ListItem>
                             <ListItem>Keras</ListItem>
+                            <ListItem>Flask</ListItem>
                         </UnorderedList>
                         <UnorderedList>
                             <ListItem>Firebase</ListItem>
@@ -230,6 +248,7 @@ const About = () => {
                             <ListItem>Prisma</ListItem>
                             <ListItem>SwiftUI</ListItem>
                             <ListItem>Numpy</ListItem>
+                            <ListItem>Alembic</ListItem>
                         </UnorderedList>
                     </HStack>
                 </Box>
@@ -253,7 +272,7 @@ const About = () => {
                         <Text size="sm">Minor in Mathematics</Text>
                     </Box>
                     <Divider borderColor={dividerColor} my={3}/>
-                    <UnorderedList align="left" fontSize={13}>
+                    <UnorderedList align="left" spacing={2} fontSize={13}>
                         <ListItem>Data Structures and Algorithms</ListItem>
                         <ListItem>Web Development</ListItem>
                         <ListItem>Rapid Prototyping and Creative Development</ListItem>
@@ -262,6 +281,8 @@ const About = () => {
                         <ListItem>Object-Oriented Software Development</ListItem>
                         <ListItem>Systems Software</ListItem>
                         <ListItem>Data Science</ListItem>
+                        <ListItem>Large Language Models</ListItem>
+                        <ListItem>Differential Equations</ListItem>
                     </UnorderedList>
                 </Box>
             </HStack>)}

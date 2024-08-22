@@ -15,11 +15,12 @@ const Projects = ({ isOpen, onClose}) => {
     }
 
     const beatbuff = new Project("Beatbuff", "A social app for sharing, rating, and catalogging music", "https://github.com/NoahCCB/Beatbuff", "/beatbuff.png");
+    const chatly = new Project("Chatly", "A chatroom website where users can suggest new features to be added to the website so that I can improve my web development!", "https://ch4tly.com/", "/chatly.png")
     const movieFinder = new Project("Movie Finder", "An app where you can find movies and look at their descriptions and ratings. Programmed in Swift using Storyboard", "https://github.com/NoahCCB/Movie-Finder", "/movie-finder.png");
     const breakout = new Project("Breakout Game", "A simple retro version of the game breakout, written entirely in Java using Swing, highlighting object oriented design principles and effective coding practice", "https://github.com/NoahCCB/Breakout-Game", "/breakout.png");
     const phasePortraitViz = new Project("Phase Portrait Visualizer", "A Phase Portrait graphing tool that includes user input and uses either a matrix representation or a system of equations of a dynamical system.", "https://github.com/NoahCCB/Phase-Portrait-Visualizer", "/phase-portrait.png");
 
-    let projectList = [beatbuff, movieFinder, breakout, phasePortraitViz]
+    let projectList = [chatly, beatbuff, movieFinder, breakout, phasePortraitViz]
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
