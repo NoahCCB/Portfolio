@@ -77,7 +77,7 @@ const About = () => {
                         enthusiastic approach to continuous learning and creation
                     </Text>
                     <Divider borderColor={dividerColor} my={3}/>
-                    <Text fontWeight="600" mb={3}>Software Developer - ASL Aspire</Text>
+                    <Text fontWeight="600" mb={3}>Full-Stack Software Engineering Intern - ASL Aspire</Text>
                     <Text>I work with ASL Aspire, a company focused on making STEM education accessible for deaf and hard of hearing students. 
                         I built there teacher dashboard website, here teachers can assign the content created by the company to students as well as 
                         get comprehensive insight into the students performance and shortcomings so as to better inform teachers. I worked on both the frontend and backend of the platform, utilizing
@@ -131,6 +131,7 @@ const About = () => {
                         <UnorderedList>
                             <ListItem>Firebase</ListItem>
                             <ListItem>React</ListItem>
+                            <ListItem>React Native</ListItem>
                             <ListItem>AWS</ListItem>
                             <ListItem>Prisma</ListItem>
                             <ListItem>SwiftUI</ListItem>
@@ -189,7 +190,7 @@ const About = () => {
                         enthusiastic approach to continuous learning and creation
                     </Text>
                     <Divider borderColor={dividerColor} my={3}/>
-                    <Text fontWeight="600" mb={3}>Software Developer - ASL Aspire</Text>
+                    <Text fontWeight="600" mb={3}>Full-Stack Software Engineering Intern - ASL Aspire</Text>
                     <Text>I work with ASL Aspire, a company focused on making STEM education accessible for deaf and hard of hearing students. 
                         I built there teacher dashboard website, here teachers can assign the content created by the company to students as well as 
                         get comprehensive insight into the students performance and shortcomings so as to better inform teachers. I worked on both the frontend and backend of the platform, utilizing
@@ -244,6 +245,7 @@ const About = () => {
                         <UnorderedList>
                             <ListItem>Firebase</ListItem>
                             <ListItem>React</ListItem>
+                            <ListItem>React Native</ListItem>
                             <ListItem>AWS</ListItem>
                             <ListItem>Prisma</ListItem>
                             <ListItem>SwiftUI</ListItem>
