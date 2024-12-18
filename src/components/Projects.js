@@ -3,7 +3,7 @@ import { Button, Image, Modal, useBreakpointValue, ModalOverlay, Link, useColorM
 
 const Projects = ({ isOpen, onClose}) => {
 
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     const boxBackgroundColor = colorMode === 'light' ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)';
     const isMobile = useBreakpointValue({ base: true, sm: true, md: false, lg: false, xl: false });
 
@@ -15,12 +15,14 @@ const Projects = ({ isOpen, onClose}) => {
     }
 
     const beatbuff = new Project("Beatbuff", "A social app for sharing, rating, and catalogging music", "https://github.com/NoahCCB/Beatbuff", "/beatbuff.png");
-    const chatly = new Project("Chatly", "A chatroom website where users can suggest new features to be added to the website so that I can improve my web development!", "https://ch4tly.com/", "/chatly.png")
+    const chatly = new Project("Chatly", "A chatroom website where users can suggest new features to be added to the website so that I can improve my web development!", "https://ch4tly.com/", "/chatly.png");
+    const partisanPredictor = new Project("Partisan Predictor", "A neural network for predicting a persons political affiliation based on questions, trained of of Supreme Court confirmation hearing data", "https://partisanpredictor.wordpress.com/", "/partisanPredictor.png");
     const movieFinder = new Project("Movie Finder", "An app where you can find movies and look at their descriptions and ratings. Programmed in Swift using Storyboard", "https://github.com/NoahCCB/Movie-Finder", "/movie-finder.png");
     const breakout = new Project("Breakout Game", "A simple retro version of the game breakout, written entirely in Java using Swing, highlighting object oriented design principles and effective coding practice", "https://github.com/NoahCCB/Breakout-Game", "/breakout.png");
     const phasePortraitViz = new Project("Phase Portrait Visualizer", "A Phase Portrait graphing tool that includes user input and uses either a matrix representation or a system of equations of a dynamical system.", "https://github.com/NoahCCB/Phase-Portrait-Visualizer", "/phase-portrait.png");
+    const deepsight = new Project("Deepsight", "a manual and automatic object detection software in Python using  SciKit, PyQT, Numpy, OpenCV, and matplotlib. The system included using various image processing techniques to verify sensor data, along with a manual verification option and data analysis tools", "", "/deepsight.png");
 
-    let projectList = [chatly, beatbuff, movieFinder, breakout, phasePortraitViz]
+    let projectList = [phasePortraitViz, partisanPredictor, deepsight, chatly, beatbuff, movieFinder, breakout]
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
@@ -32,6 +34,7 @@ const Projects = ({ isOpen, onClose}) => {
                 <Box overflowY="auto">
                     <VStack spacing={4} align="stretch">
                         {projectList.map((project) => (
+                            project.link ? (
                             <Link borderRadius="md" _hover={{textDecoration: "none", backgroundColor: "rgba(0, 0, 0, 0.15)"}} key={project.title} href={project.link} isExternal>
                                 <Box 
                                 key={project.title} 
@@ -56,6 +59,30 @@ const Projects = ({ isOpen, onClose}) => {
                                     </HStack>)}
                                 </Box>
                             </Link>
+                            ) : (
+                                <Box 
+                                key={project.title} 
+                                p={4} size="lg" borderRadius="md" 
+                                background={boxBackgroundColor}
+                                >
+                                    {isMobile ? (
+                                    <VStack>
+                                        <Box>
+                                            <Text fontWeight={700}>{project.title}</Text>
+                                            <Text>{project.description}</Text>
+                                        </Box>
+                                        <Image maxH={200} maxW={300} src={process.env.PUBLIC_URL + project.image} borderRadius="md"/>
+                                    </VStack>
+                                    ) : (
+                                    <HStack>
+                                        <Box>
+                                            <Text fontWeight={700}>{project.title}</Text>
+                                            <Text>{project.description}</Text>
+                                        </Box>
+                                        <Image maxH={200} maxW={300} src={process.env.PUBLIC_URL + project.image} borderRadius="md"/>
+                                    </HStack>)}
+                                </Box>
+                            )
                         ))}
                     </VStack>
                     </Box>

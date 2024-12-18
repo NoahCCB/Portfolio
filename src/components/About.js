@@ -1,6 +1,6 @@
 // About.js
-import React, { useState, useEffect } from 'react';
-import { Text, Image, Link, Button, Box, VStack, useBreakpointValue, useColorMode, HStack, Heading, Switch, UnorderedList, List, ListItem, Divider } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Text, Image, Link, Button, Box, VStack, useBreakpointValue, useColorMode, HStack, Heading, Switch, UnorderedList, ListItem, Divider } from '@chakra-ui/react';
 import Projects from './Projects';
 import Contact from './Contact';
 
@@ -120,6 +120,8 @@ const About = () => {
                     <Divider borderColor={dividerColor}/>
                     <HStack my={5} justifyContent="space-evenly">
                         <UnorderedList>
+                            <ListItem>PyQT</ListItem>
+                            <ListItem>QT</ListItem>
                             <ListItem>MySQL/SQL</ListItem>
                             <ListItem>NodeJs</ListItem>
                             <ListItem>NextJs</ListItem>
@@ -162,6 +164,7 @@ const About = () => {
                     <Divider borderColor={dividerColor} my={3}/>
                     <UnorderedList align="left" fontSize={13}>
                         <ListItem>Data Structures and Algorithms</ListItem>
+                        <ListItem>Analysis of Algorithms</ListItem>
                         <ListItem>Web Development</ListItem>
                         <ListItem>Rapid Prototyping and Creative Development</ListItem>
                         <ListItem>Artificial Neural Networks and Deep Learning</ListItem>
@@ -236,6 +239,7 @@ const About = () => {
                         <UnorderedList>
                             <ListItem>MySQL / SQL</ListItem>
                             <ListItem>NodeJs</ListItem>
+                            <ListItem>QT / PyQT</ListItem>
                             <ListItem>NextJs</ListItem>
                             <ListItem>PyTorch</ListItem>
                             <ListItem>Scikit</ListItem>
@@ -276,6 +280,7 @@ const About = () => {
                     <Divider borderColor={dividerColor} my={3}/>
                     <UnorderedList align="left" spacing={2} fontSize={13}>
                         <ListItem>Data Structures and Algorithms</ListItem>
+                        <ListItem>Analysis of Algorithms</ListItem>
                         <ListItem>Web Development</ListItem>
                         <ListItem>Rapid Prototyping and Creative Development</ListItem>
                         <ListItem>Artificial Neural Networks and Deep Learning</ListItem>
