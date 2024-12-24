@@ -21,8 +21,10 @@ const Projects = ({ isOpen, onClose}) => {
     const breakout = new Project("Breakout Game", "A simple retro version of the game breakout, written entirely in Java using Swing, highlighting object oriented design principles and effective coding practice", "https://github.com/NoahCCB/Breakout-Game", "/breakout.png");
     const phasePortraitViz = new Project("Phase Portrait Visualizer", "A Phase Portrait graphing tool that includes user input and uses either a matrix representation or a system of equations of a dynamical system.", "https://github.com/NoahCCB/Phase-Portrait-Visualizer", "/phase-portrait.png");
     const deepsight = new Project("Deepsight", "a manual and automatic object detection software in Python using  SciKit, PyQT, Numpy, OpenCV, and matplotlib. The system included using various image processing techniques to verify sensor data, along with a manual verification option and data analysis tools", "", "/deepsight.png");
+    const drawingApp = new Project("Drawing App", "A drawing app using C++ and QT where you can draw with different tools and colors, and save your drawings to a file", "https://github.com/NoahCCB/Drawing-App", "/drawingApp.png");
 
-    let projectList = [phasePortraitViz, partisanPredictor, deepsight, chatly, beatbuff, movieFinder, breakout]
+
+    let projectList = [phasePortraitViz, partisanPredictor, deepsight, drawingApp, chatly, beatbuff, movieFinder, breakout]
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
