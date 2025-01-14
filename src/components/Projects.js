@@ -24,7 +24,7 @@ const Projects = ({ isOpen, onClose}) => {
     const drawingApp = new Project("Drawing App", "A drawing app using C++ and QT where you can draw with different tools and colors, and save your drawings to a file", "https://github.com/NoahCCB/Drawing-App", "/drawingApp.png");
 
 
-    let projectList = [phasePortraitViz, partisanPredictor, deepsight, drawingApp, chatly, beatbuff, movieFinder, breakout]
+    let projectList = [deepsight, beatbuff, partisanPredictor, chatly, drawingApp, phasePortraitViz, movieFinder, breakout]
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
