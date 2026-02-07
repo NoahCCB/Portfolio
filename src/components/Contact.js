@@ -19,9 +19,9 @@ const Contact = ({ isOpen, onClose}) => {
                             <Text><strong>Email:</strong> <a href="mailto:c.noah@wustl.edu">c.noah@wustl.edu</a></Text>
                         </Box>
                         <Box borderRadius="md" background={boxBackgroundColor} p={4}>
-                            <Text><strong>Danish Phone:</strong> +45 44 18 52 37</Text>
+                            
                             <Text><strong>Phone:</strong> +1(406)-223-0144</Text>
-                           <Text fontSize={"sm"} fontStyle="italic">I am currently studying abroad in Copenhagen, please reach me through my danish number</Text> 
+                           
                         </Box>
                     </VStack>
                     </Box>
